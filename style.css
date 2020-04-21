@@ -3,4 +3,19 @@
     flex-wrap: wrap;
     height: 400px;
     width: 300px;
+    justify-content: space-between;
+}
+
+h3 {
+    text-align: center;
+}
+
+body {
+    justify-items: center;
+    display: grid;
+    background-color: lightslategray;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: xx-large;
+    color: gold;
 }
