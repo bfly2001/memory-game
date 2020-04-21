@@ -84,6 +84,8 @@ function flipCard() {
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
+    const flipSound = new Audio('audio/sprayfx.wav') //SFX Recorded: Mike Koenig
+    flipSound.play()
     if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500)
     }
