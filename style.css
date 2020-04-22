@@ -19,3 +19,9 @@ body {
     font-size: xx-large;
     color: gold;
 }
+
+#screen {
+    background-color: ivory;
+    border-radius: 75px;
+    padding: 3%;
+}
