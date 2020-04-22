@@ -62,16 +62,16 @@ function checkForMatch() {
     const optionTwoId = cardsChosenId[1]
     //var screen = document.getElementById("#screen").innerHTML
     if (cardsChosen[0] === cardsChosen[1]) {
-        //screen.innerHTML = "You Found a match!"
-        alert('You found a match')
+        document.getElementById("screen").textContent="Good job!";
+        //alert('You found a match')
         cards[optionOneId].setAttribute('src', 'images/clean.png')
         cards[optionTwoId].setAttribute('src', 'images/clean.png')
         cardsWon.push(cardsChosen)
     } else {
-        //screen.innerHTML = "Try Again!"
+        document.getElementById("screen").textContent="Gotta keep cleaning!";
         cards[optionOneId].setAttribute('src', 'images/pandemic.png')
         cards[optionTwoId].setAttribute('src', 'images/pandemic.png')
-        alert('Sorry, try again')  
+        //alert('Sorry, try again')  
     }
     cardsChosen = []
     cardsChosenId = []
