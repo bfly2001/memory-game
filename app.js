@@ -60,12 +60,15 @@ function checkForMatch() {
     var cards = document.querySelectorAll('img')
     const optionOneId = cardsChosenId[0]
     const optionTwoId = cardsChosenId[1]
+    //var screen = document.getElementById("#screen").innerHTML
     if (cardsChosen[0] === cardsChosen[1]) {
+        //screen.innerHTML = "You Found a match!"
         alert('You found a match')
         cards[optionOneId].setAttribute('src', 'images/clean.png')
         cards[optionTwoId].setAttribute('src', 'images/clean.png')
         cardsWon.push(cardsChosen)
     } else {
+        //screen.innerHTML = "Try Again!"
         cards[optionOneId].setAttribute('src', 'images/pandemic.png')
         cards[optionTwoId].setAttribute('src', 'images/pandemic.png')
         alert('Sorry, try again')  
