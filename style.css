@@ -4,6 +4,7 @@
     height: 400px;
     width: 300px;
     justify-content: space-between;
+    cursor: url('images/sanitizer.svg')16 16, auto;
 }
 
 h3, h2, h1 {
@@ -26,3 +27,4 @@ body {
     border-radius: 75px;
     padding: 3%;
 }
+
