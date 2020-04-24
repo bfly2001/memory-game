@@ -56,6 +56,15 @@ function createBoard() {
     }
 }
 
+//create loser board
+function loserBoard() {
+    for(let i = 0; i < cardArray.length; i++) {
+        var card = document.createElement('img')
+        card.setAttribute('src', 'images/virus.png')
+        grid.appendChild(card)
+    }
+}
+
 //check for matches
 function checkForMatch() {
     var cards = document.querySelectorAll('img')
@@ -97,6 +106,7 @@ function flipCard() {
         resultDisplay.textContent = 'Sorry! Your supply ran out. Try again.'
         document.getElementById("screen").textContent="OH NO! SUPPLY DEPLETED!"
         document.getElementById("screen").style.backgroundColor="red"
+        loserBoard()
     }
 }
 
