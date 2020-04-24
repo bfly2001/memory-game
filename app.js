@@ -40,6 +40,7 @@ cardArray.sort(() => 0.5 - Math.random())
 
 const grid = document.querySelector('.grid')
 const resultDisplay = document.querySelector('#result')
+var disinfectantSupply = document.querySelector('#rect16')
 var cardsChosen = []
 var cardsChosenId = []
 var cardsWon = []
@@ -85,9 +86,17 @@ function flipCard() {
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
     const flipSound = new Audio('audio/sprayfx.wav') //SFX Recorded: Mike Koenig
+    const alarmSound = new Audio('audio/alarmfx.wav')
     flipSound.play()
+    disinfectantSupply.style.fillOpacity = disinfectantSupply.style.fillOpacity - .10
     if (cardsChosen.length === 2) {
         setTimeout(checkForMatch, 500)
+    }
+    if (disinfectantSupply.style.fillOpacity < 0) {
+        alarmSound.play()
+        resultDisplay.textContent = 'Sorry! Your supply ran out. Try again.'
+        document.getElementById("screen").textContent="OH NO! SUPPLY DEPLETED!"
+        document.getElementById("screen").style.backgroundColor="red"
     }
 }
 
