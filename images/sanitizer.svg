@@ -11,7 +11,7 @@
    sodipodi:docname="sanitizer.svg"
    version="1.1"
    viewBox="0 0 64 64"
-   id="filled" height="32px" width="32px">
+   id="filled"  height="32px" width="32px">
   <metadata
      id="metadata31">
     <rdf:RDF>
@@ -20,7 +20,6 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -29,8 +28,8 @@
      inkscape:window-maximized="0"
      inkscape:window-y="23"
      inkscape:window-x="33"
-     inkscape:cy="32"
-     inkscape:cx="6.5979381"
+     inkscape:cy="31.208247"
+     inkscape:cx="9.8969072"
      inkscape:zoom="7.578125"
      showgrid="false"
      id="namedview29"
@@ -49,8 +48,10 @@
     <style
        id="style10">.cls-1{fill:#fff;}.cls-1,.cls-2,.cls-3,.cls-4,.cls-5{stroke:#000;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px;}.cls-2{fill:#004fe3;}.cls-3{fill:#bdc3c7;}.cls-4{fill:#81dee3;}.cls-5{fill:none;}</style>
   </defs>
+  <title
+     id="title14" />
   <rect
-     style="fill:#1eff2b;fill-opacity:1"
+     style="fill:#00e100;fill-opacity:1"
      id="rect16"
      y="22"
      x="18"
@@ -61,8 +62,8 @@
      height="38"
      class="cls-1" />
   <path
-     id="path20"
      transform="translate(64 38) rotate(-180)"
+     id="path20"
      d="M25,16H39a0,0,0,0,1,0,0v4a2,2,0,0,1-2,2H27a2,2,0,0,1-2-2V16A0,0,0,0,1,25,16Z"
      class="cls-3" />
   <rect
@@ -89,4 +90,8 @@
      inkscape:label="Layer 1"
      id="layer1"
      inkscape:groupmode="layer" />
+  <g
+     inkscape:groupmode="layer"
+     id="g881"
+     inkscape:label="Layer 1 copy" />
 </svg>
