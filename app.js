@@ -56,14 +56,6 @@ function createBoard() {
     }
 }
 
-//create loser board
-function loserBoard() {
-    for(let i = 0; i < cardArray.length; i++) {
-        var card = document.createElement('img')
-        card.setAttribute('src', 'images/virus.png')
-        grid.appendChild(card)
-    }
-}
 
 //check for matches
 function checkForMatch() {
@@ -88,9 +80,19 @@ function checkForMatch() {
     }
 }
 
+//create loser board
+function loserBoard() {
+    var losingCards = document.querySelectorAll('img')
+    for(let i = 0; i < losingCards.length; i++) {
+        losingCards[i].setAttribute('src', 'images/virus.png')
+    } 
+    
+}
+
 //flip your card
 function flipCard() {
     var cardId = this.getAttribute('data-id')
+    var loserCards = document.getElementsByTagName('img')
     cardsChosen.push(cardArray[cardId].name)
     cardsChosenId.push(cardId)
     this.setAttribute('src', cardArray[cardId].img)
