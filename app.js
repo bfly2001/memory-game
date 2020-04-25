@@ -56,6 +56,21 @@ function createBoard() {
     }
 }
 
+function resetLoserBoard() {
+    var resetCards = document.querySelectorAll('img')
+    for(let i = 0; i < resetCards.length; i++) {
+        resetCards[i].setAttribute('src', 'images/pandemic.png')
+        resetCards[i].setAttribute('data-id', i)
+        resetCards[i].addEventListener('click', flipCard)
+    }
+    document.getElementById("reset").style.display = "none"
+    disinfectantSupply.style.fillOpacity = '1.0'
+    resultDisplay.textContent = ''
+    document.getElementById('screen').textContent = "Let's Go!"
+    document.getElementById('screen').style.backgroundColor = "ivory"
+    
+}
+
 
 //check for matches
 function checkForMatch() {
@@ -85,8 +100,7 @@ function loserBoard() {
     var losingCards = document.querySelectorAll('img')
     for(let i = 0; i < losingCards.length; i++) {
         losingCards[i].setAttribute('src', 'images/virus.png')
-    } 
-    
+    }
 }
 
 //flip your card
@@ -109,6 +123,8 @@ function flipCard() {
         document.getElementById("screen").textContent="OH NO! SUPPLY DEPLETED!"
         document.getElementById("screen").style.backgroundColor="red"
         loserBoard()
+        document.getElementById("reset").style.display = 'flex'
+        document.getElementById("reset").addEventListener('click', resetLoserBoard)
     }
 }
 
