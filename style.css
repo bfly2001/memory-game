@@ -28,3 +28,7 @@ body {
     padding: 3%;
 }
 
+#reset {
+    display: none;
+}
+
