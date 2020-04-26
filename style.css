@@ -30,5 +30,13 @@ body {
 
 #reset {
     display: none;
+    width: 30%;
+    padding: 3%;
+    font-family: 'Bangers';
+    font-size: xx-large;
+    background-color: black;
+    color: gold;
+    border-radius: 50%;
+    justify-content: center;
 }
 
