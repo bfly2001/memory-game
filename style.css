@@ -7,19 +7,13 @@
     cursor: url('images/sanitizer.svg')16 16, auto;
 }
 
+body {
+    background-color: lightslategray;
+}
+
 h3, h2, h1 {
     text-align: center;
     margin-bottom: 0px;
-}
-
-body {
-    justify-items: center;
-    display: grid;
-    background-color: lightslategray;
-    text-align: center;
-    font-family: 'Bangers', cursive;
-    font-size: xx-large;
-    color: gold;
 }
 
 #screen {
@@ -40,3 +34,70 @@ body {
     justify-content: center;
 }
 
+.element {
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    height: 100vh;
+}
+
+.y-mandatory {
+    scroll-snap-type: y mandatory;
+  }
+
+.container {
+    position: relative;
+    justify-items: center;
+    display: grid;
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: xxx-large;
+    color: gold;
+  }
+
+#arrow-1 {
+      font-size: 150px;
+      display: block;
+  }
+
+  #arrow-2 {
+    font-size: 125px;
+    display: block;
+}
+
+#arrow-3 {
+    font-size: 100px;
+    display: block;
+}
+
+@keyframes bounceIn {
+        0% {
+          transform: scale(0.1);
+          opacity: 0;
+        }
+        60% {
+          transform: scale(1.2);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1);
+          opacity: 0;
+        }
+      }
+
+.arrows {
+    animation: bounceIn 2s infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+#Layer_1_1_ {
+    animation: rotation 20s infinite linear;
+    width: 70%;
+} 
