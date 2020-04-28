@@ -68,6 +68,7 @@ function resetLoserBoard() {
     resultDisplay.textContent = ''
     document.getElementById('screen').textContent = "Let's Go!"
     document.getElementById('screen').style.backgroundColor = "ivory"
+    cardArray.sort(() => 0.5 - Math.random())
     
 }
 
